@@ -1,0 +1,13 @@
+{
+  "name": "Uncomment",
+  "short_name": "Uncomment",
+  "version": "0.0.1",
+  "description": "Toggle comments on a number of popular websites.",
+  "author": "Fabio Panettieri",
+  "content_scripts": [
+    { "matches": ["https://news.ycombinator.com/*"], "css": ["css/hn.css"] },
+    { "matches": ["https://www.reddit.com/*"], "css": ["css/reddit.css"] },
+    { "matches": ["https://www.youtube.com/*"], "css": ["css/yt.css"] }
+  ],
+  "manifest_version": 2
+}
